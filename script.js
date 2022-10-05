@@ -24,6 +24,7 @@ function iniciar() {
     MarioWorld.setAttribute("hidden","hidden");
     botaoIniciar.setAttribute("hidden", "hidden");
     document.addEventListener("keydown", jump);
+    document.addEventListener("click", jump);
     play.play();
 }
 
