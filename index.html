@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Jair Ferraz">
+    <meta name="keywords" content="Html, CSS, JS, Jogo Mario">
+    <meta name="description" content="Pág. para aprendizado de HTML, CSS e JS com aplicação em jogo do Mario">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+    <title>Jogo MarioDino</title>
+</head>
+
+<body>
+    <div class="game-board">
+        <h3>PONTOS: <span id="score">0</span></h3>
+        <img src="./imagens/clouds.png" alt="Nuvens" class="clouds">
+        <img src="./imagens/MarioWorld.png" alt="MarioWorld" class="MarioWorld">
+        <!--  Mario e o pipe -->
+        <img class="mario" src="./imagens/mario.gif" alt="Mario" hidden>
+        <img src="./imagens/pipe.png" alt="Cano" class="pipe">
+        <button id="iniciar" class="recomecar" onclick="iniciar()">Iniciar</button>
+        <button id="recomecar" class="recomecar" onclick="window.location.reload();" hidden>Recomeçar!</button>
+    </div>
+    <footer>
+        <p>Créditos: <a href="https://www.youtube.com/watch?v=r9buAwVBDhA" target="_blank">Manual do Dev</a></p>
+    </footer>
+</body>
+
+</html>
